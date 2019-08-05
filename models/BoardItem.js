@@ -19,6 +19,14 @@ class BoardItem {
         $("#board").append(this.domElement)
     }
 
+    move() {
+        const myElement = this.domElement;
+        setInterval(function () {
+            console.log("move?")
+            myElement.animate({ left: "-=1", top: "-=1" }, 1)
+        }, 100)
+
+    }
 
 }
 

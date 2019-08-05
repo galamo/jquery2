@@ -17,7 +17,10 @@ function init() {
 
 function draw() {
     for (let index = 0; index < level; index++) {
-        enemies[index].drawMe()
+        const currentEnemy = enemies[index];
+        currentEnemy.drawMe()
+        if (currentEnemy.id !== "finish") currentEnemy.move()
+
     }
 
 }
