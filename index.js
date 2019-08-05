@@ -30,7 +30,6 @@ $(document).ready(function () {
 
 
 
-
 })
 
 function getRandomLocation() {
@@ -44,5 +43,4 @@ function getRandomNumber() {
 function getId() {
     return Date.now()
 }
-
 
